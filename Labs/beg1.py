@@ -82,29 +82,29 @@
 # print(output6())
 #
 # # Lists
-l1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-def output7(l1):
-    return l1[0]
-
-print(output7(l1))
-
-# Recursion/Lists
-
-def output8(l1):
-    for i in range(10):
-        return l1[::1]
-
-print(output8(l1))
+# l1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# def output7(l1):
+#     return l1[0]
+#
+# print(output7(l1))
+#
+# # Recursion/Lists
+#
+# def output8(l1):
+#     for i in range(10):
+#         return l1[::1]
+#
+# print(output8(l1))
 
 # Recursion/Lists 1
 l2 = []
 
-def output9(l2):
+def output9():
     count = 0
     while count < 10:
         l2.append(int(input("Give a number please: ")))
         count += 1
     for i in range(10):
-        return l2 * 10
+        return l2[::1]
 
-print(output9(l2))
+print(output9())

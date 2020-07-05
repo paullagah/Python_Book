@@ -29,9 +29,9 @@ from Labs.beg1 import *
 #
 # def test_eight():
 #     assert beg1.output7(l1) == l1[0]
-
-def test_nine():
-    assert beg1.output8(l1) == l1[::1]
+#
+# def test_nine():
+#     assert beg1.output8(l1) == l1[::1]
 
 def test_ten():
     assert beg1.output9(l2) == (l2 * 10)
