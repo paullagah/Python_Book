@@ -49,30 +49,62 @@
 # print(output4(bool1, num3, num4))
 #
 #
-# Conditionals 2
+# # Conditionals 2
+#
+# bool2 = input("Enter Boolean: ")
+# num5 = int(input("Please enter the first number: "))
+# num6 = int(input("Please enter the second number: "))
+#
+#
+# def output5(bool2, num5, num6):
+#     if num5 == 0:
+#         return num6
+#     elif num6 == 0:
+#         return num5
+#     elif bool2 == "True":
+#         return num5 + num6
+#     else:
+#         return num5 * num6
+#
+#
+# print(output5(bool2, num5, num6))
+#
+# # Recursion
+# loop = []
+#
+#
+# def output6():
+#     for i in range(10):
+#         loop.append(output5(bool2, num5, num6))
+#     return loop
+#
+#
+# print(output6())
+#
+# # Lists
+l1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+def output7(l1):
+    return l1[0]
 
-bool2 = input("Enter Boolean: ")
-num5 = int(input("Please enter the first number: "))
-num6 = int(input("Please enter the second number: "))
+print(output7(l1))
 
-def output5(bool2, num5, num6):
-    if num5 == 0:
-        return num6
-    elif num6 == 0:
-        return num5
-    elif bool2 == "True":
-        return num5 + num6
-    else:
-        return num5 * num6
+# Recursion/Lists
 
-print(output5(bool2, num5, num6))
-
-# Recursion
-loop = []
-
-def output6():
+def output8(l1):
     for i in range(10):
-        loop.append(output5(bool2, num5, num6))
-    return loop
+        return l1[::1]
 
-print(output6())
+print(output8(l1))
+
+# Recursion/Lists 1
+l2 = []
+
+def output9(l2):
+    count = 0
+    while count < 10:
+        l2.append(int(input("Give a number please: ")))
+        count += 1
+    for i in range(10):
+        return l2 * 10
+
+print(output9(l2))
