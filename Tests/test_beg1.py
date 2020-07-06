@@ -2,6 +2,7 @@ import pytest
 from Labs import beg1
 from Labs.beg1 import *
 
+
 # def test_one():
 #     assert beg1.output() == "Hello World!"
 #

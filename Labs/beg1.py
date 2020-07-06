@@ -99,6 +99,7 @@
 # Recursion/Lists 1
 l2 = []
 
+
 def output9():
     count = 0
     while count < 10:
@@ -106,5 +107,6 @@ def output9():
         count += 1
     for i in range(10):
         return l2[::1]
+
 
 print(output9())
